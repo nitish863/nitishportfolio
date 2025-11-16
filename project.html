@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+<style>
+/* ===== PROJECT SECTION ===== */
+.projects-section {
+  padding: 80px 10%;
+  background: #0a0a0a;
+  text-align: center;
+}
+
+.projects-section .section-title {
+  font-size: 40px;
+  color: #ff4d6d;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* Project Card */
+.project-card {
+  background: #111;
+  border: 2px solid #ff4d6d;
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 15px rgba(255, 77, 109, 0.3);
+}
+
+.project-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 0 30px #ff4d6d;
+}
+
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  box-shadow: 0 0 10px #ff4d6d55;
+  transition: transform 0.3s ease;
+}
+
+.project-card img:hover {
+  transform: scale(1.05);
+}
+
+.project-card h3 {
+  color: #ff4d6d;
+  font-size: 22px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.project-card p {
+  color: #ccc;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Button */
+.project-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  border-radius: 50px;
+  color: #ff4d6d;
+  border: 2px solid #ff4d6d;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.project-btn:hover {
+  background: #ff4d6d;
+  color: #000;
+  box-shadow: 0 0 20px #ff4d6d;
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<section id="projects" class="projects-section">
+  <h1 class="section-title">🚀 My Projects</h1>
+
+  <div class="projects-container">
+
+    <div class="project-card">
+      <!-- <img src="images/portfolio.png" alt="Portfolio Website"> -->
+      <h3>Portfolio Website</h3>
+      <p>A modern responsive portfolio website built using HTML, CSS, and JavaScript.</p>
+      <a href="https://nitish863.github.io/random-file/copy.html" class="project-btn">View Project</a>
+    </div>
+
+    <div class="project-card">
+      <!-- <img src="images/attendance.png" alt="Smart Attendance System"> -->
+      <h3>Smart Attendance System</h3>
+      <p>Python + MySQL based attendance automation system with high accuracy.</p>
+      <a href="https://nitish863.github.io/walker/nino.html" class="project-btn">View Project</a>
+    </div>
+
+    
+
+  </div>
+</section>
+
+
+</body>
+</html>
+
+
+
+
